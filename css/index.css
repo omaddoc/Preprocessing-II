@@ -4,19 +4,53 @@
   width: 100%;
   border-bottom: 2px dashed black;
 }
-.above h1 {
+.above .top-contain {
+  width: 100%;
+}
+.above .top-contain h1 {
   font-size: 5rem;
   text-align: center;
   padding-bottom: 30px;
 }
-.above nav {
+.above .top-contain nav {
   display: flex;
   justify-content: space-around;
 }
-.above nav a {
+.above .top-contain nav a {
   font-size: 3rem;
   text-decoration: none;
   color: black;
+}
+@media (min-width: 800px) {
+  .above {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px dashed black;
+  }
+  .above .top-contain {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0 auto;
+  }
+  .above .top-contain h1 {
+    font-size: 5rem;
+    padding-bottom: 0;
+  }
+  .above .top-contain nav {
+    width: 60%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .above .top-contain nav a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    margin-left: 7%;
+    align-self: center;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -199,6 +233,19 @@ img {
   font-size: 1.2rem;
   padding: 40px 0;
 }
+@media (min-width: 800px) {
+  .footer {
+    width: 100%;
+    border-top: 2px dashed black;
+    background: #FFEBCD;
+  }
+  .footer p {
+    text-align: center;
+    color: #212529;
+    font-size: 1.2rem;
+    padding: 20px 0;
+  }
+}
 .home .content-section {
   margin: 0 0 30px;
   display: flex;
@@ -241,11 +288,50 @@ img {
   border-radius: 10px;
   width: 100%;
 }
+@media (min-width: 800px) {
+  .home .content-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .home .content-section .first-sec {
+    padding-bottom: 30px;
+    border-bottom: 1px dashed black;
+  }
+  .home .content-section .first-sec .bus-banner {
+    width: 100%;
+  }
+  .home .content-section .first-sec h2 {
+    padding: 20px 0;
+    font-size: 5rem;
+  }
+  .home .content-section .first-sec p {
+    font-size: 2rem;
+  }
+  .home .content-section .text-content {
+    width: 48%;
+    padding-right: 1%;
+    padding-right: 0;
+  }
+  .home .content-section h2 {
+    font-size: 5rem;
+  }
+  .home .content-section p {
+    font-size: 2rem;
+  }
+  .home .content-section .img-content {
+    width: 48%;
+    padding-left: 1%;
+    padding: 30px 0;
+  }
+  .home .content-section .img-content img {
+    border-radius: 10px;
+  }
+}
 .home .inverse-content {
   padding-bottom: 50px;
   border-bottom: 2px dashed #C0C0C0;
   display: flex;
-  flex-flow: column-reverse wrap;
+  flex-flow: row wrap;
 }
 .home .inverse-content .text-content {
   padding-right: 0;
@@ -254,9 +340,8 @@ img {
   padding-left: 0;
 }
 .home .content-destination {
-  width: 100%;
-  margin: 0 auto;
-  padding: 30px 0 40px;
+  width: 75%;
+  margin: 0 auto 30px;
 }
 .home .content-destination h2 {
   font-size: 5rem;
@@ -270,32 +355,30 @@ img {
   width: 100%;
 }
 .home .content-pick {
-  padding: 40px 0;
+  padding: 20px 0;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
-  flex-flow: column wrap;
-  margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 .home .content-pick .destination {
-  width: 100%;
+  width: 27%;
   margin-bottom: 30px;
+  margin-right: 5%;
 }
 .home .content-pick .destination h4 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: 10px;
 }
 .home .content-pick .destination p {
   font-size: 1.5rem;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .home .content-pick .destination .btn {
   background: #04dbdb;
-  width: 100%;
   color: white;
-  border-radius: 20px;
-  padding: 20px 0;
+  border-radius: 10px;
+  padding: 10px 10px;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
